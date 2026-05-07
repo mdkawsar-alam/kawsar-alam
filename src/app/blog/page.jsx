@@ -1,6 +1,6 @@
 import EnhancedBlog from '@/components/ui/Blog/EnhancedBlog/EnhancedBlog';
 import Container from '@/components/sheard/Contatiner/Container';
-import React from 'react';
+import React, { Suspense } from 'react';
 
 const Blog = () => {
     return (
@@ -15,7 +15,9 @@ const Blog = () => {
                 Thoughts, tutorials, and insights about web development, technology, and the journey of becoming a better developer.
               </p>
             </div>
-            <EnhancedBlog />
+            <Suspense fallback={<div className="text-center text-white">Loading blog posts...</div>}>
+              <EnhancedBlog />
+            </Suspense>
           </div>
         </Container>
       </div>
