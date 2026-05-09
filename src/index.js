@@ -12,7 +12,8 @@ import react from "@/assets/blog/why_reactjs.png";
 import whynext from "@/assets/blog/why_nextjs.png";
 import customvsword from "@/assets/blog/cust_w.jpg";
 import mistake from "@/assets/blog/mistake.jpg";
-
+// project
+import fivester from "@/assets/projects/fivester.png";
 import node_vs_laravel from "@/assets/blog/node_vs_laravel.png";
 
 
@@ -147,11 +148,11 @@ export const projects = [
   },
   {
     id: 3,
-    image: '/path/to/image3.jpg',
-    placeholder: '/path/to/placeholder3.jpg',
-    title: 'Project Three',
-    description: 'This is a brief description of Project Three.',
-    link: 'https://example.com/project-three',
+    image: fivester,
+    placeholder: fivester,
+    title: 'FiveStar',
+    description: 'FiveStar is a modern multipage responsive web project with a clean UI and smooth user experience. It includes WhatsApp integration for easy messaging and communication. The project is optimized for both mobile and desktop devices with fast performance and modern design.',
+    link: 'https://fivestar-amber.vercel.app/',
   },
 
 ];

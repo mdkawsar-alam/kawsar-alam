@@ -54,8 +54,8 @@ const Projects = () => {
               width={400}
               height={200}
               className="rounded-sm mb-4 w-full h-auto"
-              placeholder={project.placeholder ? "blur" : "empty"}
-              blurDataURL={project.placeholder || undefined}
+              placeholder={typeof project.placeholder === "string" ? "blur" : "empty"}
+              {...(typeof project.placeholder === "string" && { blurDataURL: project.placeholder })}
             />
 
             {/* Title */}
